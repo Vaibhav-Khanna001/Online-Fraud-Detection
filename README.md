@@ -7,7 +7,7 @@ This project aims to detect fraudulent online payment transactions using a combi
 ## Dataset
 
 - **Source:** [Kaggle – Online Payments Fraud Detection](https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset)
-- **File:** `PS_20174392719_1491204439457_log.csv`
+- **File:** `Dataset.csv`
 - **Description:** Contains simulated online payment transactions with features like transaction type, amount, origin, destination, and a binary label `isFraud`.
 
 ---
