@@ -14,7 +14,7 @@ This project aims to detect fraudulent online payment transactions using a combi
 
 ## Models Used
 
-### 🔷 Supervised Learning:
+### Supervised Learning:
 - Logistic Regression  
 - Random Forest Classifier  
 - XGBoost Classifier  
@@ -25,7 +25,7 @@ This project aims to detect fraudulent online payment transactions using a combi
 
 ---
 
-## ⚙Workflow
+## Workflow
 
 1. Uploaded Kaggle API key to Colab  
 2. Downloaded and unzipped the dataset  
