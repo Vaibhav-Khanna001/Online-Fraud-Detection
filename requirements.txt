@@ -1,0 +1,40 @@
+=======================
+Core Libraries
+=======================
+numpy
+pandas
+
+=======================
+Visualization Libraries
+=======================
+matplotlib
+seaborn
+
+=======================
+Machine Learning & Preprocessing
+=======================
+scikit-learn
+xgboost
+
+=======================
+Handling Imbalanced Data
+=======================
+imbalanced-learn
+
+=======================
+Kaggle API Access
+=======================
+kaggle
+
+=======================
+Supervised Learning Models
+=======================
+Logistic Regression
+Random Forest Classifier
+XGBoost Classifier
+
+=======================
+Unsupervised Learning Models
+=======================
+Isolation Forest
+K-Means Clustering
