@@ -1,10 +1,10 @@
-# 💰 Online Payment Fraud Detection using Machine Learning
+# Online Payment Fraud Detection using Machine Learning
 
 This project aims to detect fraudulent online payment transactions using a combination of supervised and unsupervised machine learning models. It addresses real-world challenges such as severe class imbalance and unlabeled anomalies. The goal is to build a robust, interpretable, and scalable fraud detection pipeline.
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Source:** [Kaggle – Online Payments Fraud Detection](https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset)
 - **File:** `PS_20174392719_1491204439457_log.csv`
@@ -12,20 +12,20 @@ This project aims to detect fraudulent online payment transactions using a combi
 
 ---
 
-## 🧠 Models Used
+## Models Used
 
 ### 🔷 Supervised Learning:
 - Logistic Regression  
 - Random Forest Classifier  
 - XGBoost Classifier  
 
-### 🔶 Unsupervised Learning:
+### Unsupervised Learning:
 - Isolation Forest  
 - K-Means Clustering  
 
 ---
 
-## ⚙️ Workflow
+## ⚙Workflow
 
 1. Uploaded Kaggle API key to Colab  
 2. Downloaded and unzipped the dataset  
@@ -40,7 +40,7 @@ This project aims to detect fraudulent online payment transactions using a combi
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 Each model is evaluated using:
 
@@ -54,7 +54,7 @@ Each model is evaluated using:
 
 ---
 
-## 📈 Results Summary
+## Results Summary
 
 - **XGBoost** achieved the best performance in terms of **Recall** and **ROC-AUC**, making it effective for detecting fraudulent transactions.
 - **Isolation Forest** worked well for detecting outliers and anomalies without needing labeled data.
@@ -62,26 +62,9 @@ Each model is evaluated using:
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - Python  
 - Libraries: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `imbalanced-learn`, `matplotlib`, `seaborn`
 
----
-
-## 📌 How to Run
-
-1. Open the notebook (`online_fraud_detection.ipynb`) in Google Colab or Jupyter Notebook  
-2. Upload your `kaggle.json` API key  
-3. Run all cells sequentially  
-4. View the evaluation metrics and visual performance comparison of models
-
----
-
-## 👤 Author
-
-**Vaibhav Khanna**  
-B.Tech CSE | IIIT Nagpur
-
----
 
