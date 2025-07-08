@@ -1,56 +1,87 @@
-Online Payment Fraud Detection using Machine Learning
+# 💰 Online Payment Fraud Detection using Machine Learning
 
-This project aims to detect fraudulent online payment transactions using a combination of supervised and unsupervised machine learning models. It handles real-world challenges such as severe class imbalance and unlabeled anomalies. The goal is to build a robust and scalable fraud detection pipeline.
-
-
-Dataset
-
-- Source: (https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset)
-- File: `PS_20174392719_1491204439457_log.csv`
-- Description: Contains simulated online payment transactions with features like transaction type, amount, origin, destination, and a binary label `isFraud`.
-
-
-Models Used
-
-Supervised Learning:
-- Logistic Regression  
-- Random Forest Classifier  
-- XGBoost Classifier
-
-Unsupervised Learning:
-- Isolation Forest  
-- K-Means Clustering
-
-
-Workflow
-
-1. Uploaded Kaggle API key to Colab
-2. Downloaded and unzip dataset
-3. Preprocessed data:
-   - Dropped IDs (`nameOrig`, `nameDest`)
-   - One-hot encode `type` column
-   - Standardized features
-4. Handled class imbalance using `RandomUnderSampler`
-5. Trained & evaluated supervised and unsupervised models
-6. Compared models using precision, recall, F1, ROC-AUC, and PR-AUC
-7. Made Visualization metrics for all models
+This project aims to detect fraudulent online payment transactions using a combination of supervised and unsupervised machine learning models. It addresses real-world challenges such as severe class imbalance and unlabeled anomalies. The goal is to build a robust, interpretable, and scalable fraud detection pipeline.
 
 ---
 
-Evaluation Metrics
+## 📂 Dataset
 
-Each model is evaluated on:
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- ROC-AUC
-- PR-AUC
-- Confusion Matrix
+- **Source:** [Kaggle – Online Payments Fraud Detection](https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset)
+- **File:** `PS_20174392719_1491204439457_log.csv`
+- **Description:** Contains simulated online payment transactions with features like transaction type, amount, origin, destination, and a binary label `isFraud`.
 
+---
 
-Results Summary
+## 🧠 Models Used
 
-- XGBoost achieved the best performance in terms of recall and AUC.
-- Isolation Forest effectively detected anomalies without label supervision.
-- K-Means provided a basic clustering-based fraud separation using post-cluster label mapping.
+### 🔷 Supervised Learning:
+- Logistic Regression  
+- Random Forest Classifier  
+- XGBoost Classifier  
+
+### 🔶 Unsupervised Learning:
+- Isolation Forest  
+- K-Means Clustering  
+
+---
+
+## ⚙️ Workflow
+
+1. Uploaded Kaggle API key to Colab  
+2. Downloaded and unzipped the dataset  
+3. Preprocessed the data:
+   - Dropped ID columns (`nameOrig`, `nameDest`)
+   - One-hot encoded the `type` column  
+   - Standardized features using `StandardScaler`
+4. Addressed class imbalance using `RandomUnderSampler`  
+5. Trained and evaluated both supervised and unsupervised models  
+6. Compared models using classification metrics  
+7. Visualized performance metrics across all models  
+
+---
+
+## 📊 Evaluation Metrics
+
+Each model is evaluated using:
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1 Score  
+- ROC-AUC  
+- PR-AUC  
+- Confusion Matrix  
+
+---
+
+## 📈 Results Summary
+
+- **XGBoost** achieved the best performance in terms of **Recall** and **ROC-AUC**, making it effective for detecting fraudulent transactions.
+- **Isolation Forest** worked well for detecting outliers and anomalies without needing labeled data.
+- **K-Means** offered a basic unsupervised approach using cluster-to-label mapping for fraud identification.
+
+---
+
+## 🧰 Tech Stack
+
+- Python  
+- Libraries: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `imbalanced-learn`, `matplotlib`, `seaborn`
+
+---
+
+## 📌 How to Run
+
+1. Open the notebook (`online_fraud_detection.ipynb`) in Google Colab or Jupyter Notebook  
+2. Upload your `kaggle.json` API key  
+3. Run all cells sequentially  
+4. View the evaluation metrics and visual performance comparison of models
+
+---
+
+## 👤 Author
+
+**Vaibhav Khanna**  
+B.Tech CSE | IIIT Nagpur
+
+---
+
